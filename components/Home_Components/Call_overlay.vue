@@ -19,8 +19,6 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-//import {mapState} from 'vuex';
 import { overlayVisibility } from '~~/store';
 import { mapState } from 'pinia';
 

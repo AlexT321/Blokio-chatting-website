@@ -37,13 +37,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'rest_framework',
-    # 'corsheader',
+    'rest_framework',
+    'corsheaders',
     'core',
 ]
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -53,8 +54,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ORIGIN_WHITELIST = (
-    'http://localhost:3000'
+CORS_ALLOWED_ORIGINS = (
+    'http://localhost:3000',
+    'http://127.0.0.1:8000',
 )
 
 ROOT_URLCONF = 'chat_api.urls'
@@ -83,8 +85,12 @@ WSGI_APPLICATION = 'chat_api.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'blokio',
+        'USER': 'root',
+        'PASSWORD': 'Mailot123@',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 

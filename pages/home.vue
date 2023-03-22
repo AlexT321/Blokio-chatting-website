@@ -24,7 +24,6 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
 import Header_main from '~/layouts/Header_main.vue';
 import Footer_main from '~/layouts/Footer_main.vue';
 import Side_menu from '~/layouts/Side_menu.vue';
@@ -33,6 +32,46 @@ import Chat_overlay from '~/components/Home_Components/Chat_overlay.vue';
 import Call_overlay from '~/components/Home_Components/Call_overlay.vue';
 
 import { overlayVisibility } from '~~/store';
+
+// const message = async () => {
+//   try {
+//     const result = await fetch("http://127.0.0.1:8000/api/messages/get_data",{
+//       method:"GET",
+//       headers: {"content-type": "application/json",
+      
+//     }
+//     })
+//     const data = await result.json();
+//     return data;
+//   } catch(err) {
+//     console.log(err);
+//   }
+// }
+// const load_information = async() => {
+//   const data = await message();
+//   console.log(data);
+// }
+// load_information();
+
+// const send_messages = async () => {
+//   try {
+//     const result = await fetch("http://127.0.0.1:8000/api/messages/post_data/",{
+//       method:"POST",
+//       body: JSON.stringify({
+//       message: "hello this is a new message 21214544"
+//     }),
+//       headers: {"Content-type": "application/json",
+      
+//     },
+//     })
+//     const data = await result.json();
+//     console.log(data);
+//   } catch(err) {
+//     console.log(err);
+//   }
+// }
+// send_messages();
+
 
 
 const store = overlayVisibility();

@@ -1,5 +1,5 @@
 <template>
-  <div class="w-screen h-screen bg-zinc-900 flex justify-between items-center flex-col overflow-hidden">
+  <div id="main-content" class="w-screen h-screen bg-zinc-900 flex justify-between items-center flex-col overflow-hidden">
     <Header_main />
     <div class="h-full xl:w-[140vh] w-screen flex flex-col justify-center gap-5 md:gap-20 overflow-auto">
       <div class="h-fit xl:w-[100vh] w-screen lg:text-[3vw] sm:text-[5vw] text-[10vw] text-white pl-2 xl:pl-0">
@@ -13,7 +13,6 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
 import Header_main from "~/layouts/Header_main.vue";
 import Footer_main from "~/layouts/Footer_main.vue";
 
@@ -40,4 +39,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+  #main-content {
+    background-image: url("../../assets/circuit_background.jpg");
+  }
+</style>

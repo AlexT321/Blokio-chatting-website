@@ -70,7 +70,6 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
 import Header_main from "~/layouts/Header_main.vue"
 import Footer_main from "~/layouts/Footer_main.vue"
 export default {
