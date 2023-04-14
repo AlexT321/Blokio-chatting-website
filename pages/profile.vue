@@ -65,7 +65,6 @@
         </div>
       </div>
     </div>
-    <Footer_main/>
   </div>
 </template>
 

@@ -19,7 +19,6 @@
         </div>
       </div>
     </div>
-    <Footer_main/>
   </div>
 </template>
 
@@ -32,6 +31,10 @@ import Chat_overlay from '~/components/Home_Components/Chat_overlay.vue';
 import Call_overlay from '~/components/Home_Components/Call_overlay.vue';
 
 import { overlayVisibility } from '~~/store';
+
+
+
+
 
 // const message = async () => {
 //   try {

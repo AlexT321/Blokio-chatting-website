@@ -1,5 +1,5 @@
 <template>
-  <header class=" bg-blue-500 w-screen h-16 flex items-center justify-between sm:justify-center flex-row gap-2 sm:gap-5 pl-4">
+  <header id="header-container" class=" bg-blue-500 w-screen h-16 flex items-center justify-between sm:justify-center flex-row gap-2 sm:gap-5 pl-4">
     <div class="sm:hidden flex justify-center items-center">
       <svg class="fill-blue-200" xmlns="http://www.w3.org/2000/svg" width="48" height="48" xmlns:v="https://vecta.io/nano"><path d="M41 14H7a2 2 0 0 1 0-4h34a2 2 0 0 1 0 4zm0 12H7a2 2 0 0 1 0-4h34a2 2 0 0 1 0 4zm0 12H7a2 2 0 0 1 0-4h34a2 2 0 0 1 0 4z"/></svg>
     </div>
@@ -34,6 +34,8 @@ export default {
 };
 </script>
 
-<style>
-
+<style scoped>
+#header-container {
+  background: linear-gradient(to bottom, rgb(59, 130, 246, 1) 100%,rgba(187, 24, 24, 0) 100%);
+}
 </style>
