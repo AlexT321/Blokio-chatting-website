@@ -42,10 +42,22 @@ VALUES(
 SELECT * FROM core_messages
 
 --@block
-DELETE FROM `core_messages` WHERE `id` IN (1,2);
+SELECT * FROM auth_user
+
+--@block
+DELETE FROM `core_messages` WHERE `id` IN (1,3);
 
 --@block
 ALTER TABLE core_messages AUTO_INCREMENT = 1
 
 --@block
 SELECT * FROM users
+
+--@block 
+SELECT * FROM auth_user
+
+--@block 
+SELECT * FROM core_user
+
+--@block
+SELECT * FROM core_account
