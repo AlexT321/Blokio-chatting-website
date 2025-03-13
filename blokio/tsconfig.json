@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "types": ["@nuxt/types", "@nuxtjs/tailwindcss"]
+  },
+  "exclude": ["node_modules", ".nuxt", "dist", "controllers", "server", "store", "tailwind.config.js", "vite.config.js"]
+}
+

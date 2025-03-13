@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.18.1",
+    "@nuxtjs/tailwindcss": "^6.4.1",
+    "nuxt": "^3.2.3"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.4.7",
+    "pinia": "^2.0.32",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "three": "^0.150.1",
+    "vue": "^3.2.47"
+  }
+}
